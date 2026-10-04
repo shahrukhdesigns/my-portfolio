@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahrukh's Designs ✦ Graphic Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@1&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+
+<div id="preloader"><div class="pre-logo">Shahrukh's <em>Designs</em></div><div class="pre-bar"><div></div></div></div>
+<div id="progress"></div>
+<div class="orb orb-1"></div><div class="orb orb-2"></div><div class="noise"></div>
+
+<div id="lightbox">
+<button class="lb-close" id="lbClose">×</button>
+<div class="lb-title" id="lbTitle"></div>
+<button class="lb-nav lb-prev" id="lbPrev">←</button>
+<img id="lbImg" src="" alt="Full Image">
+<button class="lb-nav lb-next" id="lbNext">→</button>
+<div class="lb-count" id="lbCount"></div>
+</div>
+
+<header>
+<div class="logo">Shahrukh's <em>Designs</em></div>
+<nav id="nav">
+<ul>
+<li><a href="#work">Work</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#about">Skills</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#account">Account</a></li>
+</ul>
+</nav>
+<div class="h-right">
+<div id="authArea"></div>
+<button class="hamburger" id="hamburgerBtn">☰</button>
+</div>
+</header>
+
+<section class="hero">
+<div>
+<div class="badge"><span class="dot"></span> <span id="heroBadge"></span></div>
+<p class="tag" id="heroTag"></p>
+<h1 id="heroH1"></h1>
+<p class="desc" id="heroDesc"></p>
+<div class="hero-btns">
+<a href="#work" class="btn">View My Work ↗</a>
+<a href="#about" class="btn btn-outline">About Me</a>
+</div>
+</div>
+<div class="hero-img"><img id="heroPhoto" src="" alt="Shahrukh"></div>
+<div class="side-text">Shahrukh's Designs © 2025</div>
+<div class="scroll-down">Scroll <span>↓</span></div>
+</section>
+
+<div class="marquee"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+<section id="work">
+<div class="work-head reveal">
+<div>
+<p class="section-label">01 — Selected Work</p>
+<h2>Creative Work <span class="serif">That Speaks.</span></h2>
+</div>
+<div class="filters" id="filters"></div>
+</div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section class="stats"><div class="stats-grid reveal" id="statsGrid"></div></section>
+
+<section class="about" id="about">
+<div class="about-wrap">
+<div class="reveal">
+<p class="section-label">02 — About Me</p>
+<h2>Designing Brands <span class="serif">With Purpose.</span></h2>
+<p class="text" id="aboutText"></p>
+<div class="signature" id="aboutSign"></div>
+<a href="#contact" class="btn">Let's Talk ↗</a>
+</div>
+<div class="reveal">
+<p class="section-label">03 — Expertise</p>
+<h2 style="font-size:28px;margin-bottom:34px">Design <span class="serif">Skills.</span></h2>
+<div id="skillList"></div>
+</div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="reveal">
+<p class="section-label">04 — Testimonials</p>
+<h2>What Clients <span class="serif">Say.</span></h2>
+</div>
+<div class="reviews-grid" id="reviewsGrid"></div>
+</section>
+
+<section id="contact">
+<div class="contact-wrap">
+<div class="contact-left reveal">
+<p class="section-label">05 — Let's Work Together</p>
+<h2>Have a Project <span class="serif">in Mind?</span></h2>
+<p>I'd love to hear about your project and explore how we can create something amazing together.</p>
+<a id="mailLink" href="#" class="btn btn-dark">Send a Message ↗</a>
+</div>
+<form id="contactForm" class="reveal">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email Address" required>
+</div>
+<select>
+<option>Project Type</option><option>Mascot Logo</option><option>Vector Character</option>
+<option>Custom Lettering</option><option>Emblem / Crest</option><option>Print Design</option><option>Other</option>
+</select>
+<textarea placeholder="Tell me about your project"></textarea>
+<button class="btn" type="submit" style="width:100%;justify-content:center">Send Message ↗</button>
+<p id="formMsg">✓ Thank you! Your message has been received.</p>
+</form>
+</div>
+</section>
+
+<section class="account" id="account">
+<div class="account-box" id="accountBox">
+<p class="section-label center">07 — Account</p>
+<h2>Login or <span class="serif">Sign Up.</span></h2>
+<div class="acc-btns">
+<button type="button" class="btn" id="accLoginBtn">Login →</button>
+<button type="button" class="btn btn-outline" id="accSignupBtn">Create Account →</button>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-cta reveal">
+<p class="section-label center">06 — Contact</p>
+<h2>Let's Create Something <span class="serif">Amazing.</span></h2>
+<p>Follow me on social media or drop a message — I reply within 24 hours.</p>
+<div class="socials" id="socials"></div>
+</div>
+<div class="footer-bottom">
+<span>Shahrukh's Designs © 2025 — All Rights Reserved</span>
+<div>
+<a href="#work">Work</a><a href="#about">About</a>
+<a href="#contact">Contact</a><a href="#account">Account</a>
+</div>
+</div>
+</footer>
+
+<button id="toTop">↑</button>
+
+<div id="loginModal">
+<div id="loginBox">
+<button id="loginClose">×</button>
+<div class="lock">🔐</div>
+<div class="auth-tabs">
+<button class="auth-tab active" data-tab="login" type="button">Login</button>
+<button class="auth-tab" data-tab="signup" type="button">Sign Up</button>
+</div>
+<form id="formLogin">
+<input type="text" id="liUser" placeholder="Username or Email" required>
+<input type="password" id="liPass" placeholder="Password" required>
+<button type="submit" class="auth-submit">Login →</button>
+<p class="auth-err" id="liErr">✗ Invalid username or password</p>
+</form>
+<form id="formSignup" style="display:none">
+<input type="text" id="suName" placeholder="Full Name" required>
+<input type="email" id="suEmail" placeholder="Email Address" required>
+<input type="password" id="suPass" placeholder="Password (min 4 characters)" required>
+<input type="password" id="suPass2" placeholder="Confirm Password" required>
+<button type="submit" class="auth-submit">Create Account →</button>
+<p class="auth-err" id="suErr"></p>
+<p class="auth-note">Create a free account to stay connected.</p>
+</form>
+</div>
+</div>
+
+<div id="admin">
+<div class="a-wrap">
+<aside>
+<div class="brand">SD <em>Admin</em></div>
+<nav id="sideNav">
+<button class="nav-btn active" data-sec="dash">🏠 <span class="txt">Dashboard</span></button>
+<button class="nav-btn" data-sec="theme">🎨 <span class="txt">Theme</span></button>
+<button class="nav-btn" data-sec="hero">🦸 <span class="txt">Hero</span></button>
+<button class="nav-btn" data-sec="projects">🖼️ <span class="txt">Projects</span></button>
+<button class="nav-btn" data-sec="cats">📂 <span class="txt">Categories</span></button>
+<button class="nav-btn" data-sec="skills">📊 <span class="txt">Skills</span></button>
+<button class="nav-btn" data-sec="reviews">💬 <span class="txt">Reviews</span></button>
+<button class="nav-btn" data-sec="stats">🔢 <span class="txt">Stats</span></button>
+<button class="nav-btn" data-sec="about">✍️ <span class="txt">About</span></button>
+<button class="nav-btn" data-sec="users">👥 <span class="txt">Users</span></button>
+<button class="nav-btn" data-sec="messages">📬 <span class="txt">Messages</span></button>
+<button class="nav-btn" data-sec="backup">💾 <span class="txt">Backup</span></button>
+<button class="nav-btn" data-sec="security">🔐 <span class="txt">Security</span></button>
+</nav>
+<div class="side-foot">
+<button class="sf-btn btn-save" id="saveBtn">Save Changes</button>
+<button class="sf-btn btn-close" id="closeAdminBtn">View Site ↗</button>
+</div>
+</aside>
+<main>
+
+<section class="sec active" id="sec-dash">
+<h1>Dashboard 👋</h1>
+<p class="page-sub">Welcome back, Administrator</p>
+<div class="dash-grid" id="dashCards"></div>
+<div class="tips">
+<b>How it works:</b><br>
+✅ Open a section → make changes → <b>Save Changes</b><br>
+✅ <b>View Site</b> closes the dashboard with updates applied<br>
+✅ Client form messages arrive in <b>Messages</b> + your <b>email</b><br>
+✅ Change admin username/password in <b>Security</b><br>
+⚠️ Data is saved in this browser — export a <b>Backup</b> regularly
+</div>
+</section>
+
+<section class="sec" id="sec-theme">
+<h1>Theme & Colors 🎨</h1>
+<p class="page-sub">Control the entire color scheme</p>
+<div class="panel">
+<h3>Main Colors</h3>
+<div class="row">
+<div>
+<label>Accent Color</label>
+<div class="color-row"><input type="color" id="inAccent"><span class="val" id="valAccent"></span></div>
+<div class="presets" id="accentPresets"></div>
+</div>
+<div><label>Background</label><div class="color-row"><input type="color" id="inBg"><span class="val" id="valBg"></span></div></div>
+<div><label>Card</label><div class="color-row"><input type="color" id="inCard"><span class="val" id="valCard"></span></div></div>
+</div>
+</div>
+<div class="panel"><h3>Quick Presets</h3><div class="row" id="themePresets"></div></div>
+</section>
+
+<section class="sec" id="sec-hero">
+<h1>Hero Section 🦸</h1>
+<p class="page-sub">Front page top portion</p>
+<div class="panel">
+<h3>Your Photo</h3>
+<img id="heroPhotoPrev" style="width:110px;height:130px;object-fit:cover;border-radius:12px;border:1px solid #262626">
+<div style="margin-top:12px">
+<label for="heroPhotoFile" class="btn-sm btn-ghost" style="display:inline-flex;align-items:center;cursor:pointer">📁 Upload New Photo</label>
+<input type="file" id="heroPhotoFile" accept="image/*">
+</div>
+</div>
+<div class="panel">
+<h3>Texts</h3>
+<div class="row">
+<div><label>Badge Text</label><input type="text" id="inBadge"></div>
+<div><label>Tag / Designation</label><input type="text" id="inTag"></div>
+</div>
+<label>Heading — First Part</label><input type="text" id="inH1a">
+<div class="row">
+<div><label>Accent Word</label><input type="text" id="inH1b"></div>
+<div><label>Remaining Part</label><input type="text" id="inH1c"></div>
+</div>
+<label>Description</label><textarea id="inDesc"></textarea>
+</div>
+</section>
+
+<section class="sec" id="sec-projects">
+<h1>Projects 🖼️</h1>
+<p class="page-sub">Insert / Update / Delete</p>
+<div class="panel">
+<h3>➕ Add New Project</h3>
+<div class="row">
+<div><label>Title</label><input type="text" id="npTitle"></div>
+<div><label>Subtitle</label><input type="text" id="npSub"></div>
+<div><label>Category</label><select id="npCat"></select></div>
+</div>
+<div class="row" style="margin-top:14px">
+<div style="flex:2">
+<label>Image Upload</label>
+<label for="npFile" class="btn-sm btn-ghost" style="display:inline-flex;align-items:center;cursor:pointer">📁 Choose Image</label>
+<input type="file" id="npFile" accept="image/*">
+<span id="npFileName" style="font-size:12px;color:var(--muted);margin-left:10px"></span>
+</div>
+<button class="btn-sm btn-accent" id="npAdd" type="button" style="height:42px">+ Add Project</button>
+</div>
+</div>
+<div class="panel"><h3>All Projects</h3><div id="projList"></div></div>
+</section>
+
+<section class="sec" id="sec-cats">
+<h1>Categories 📂</h1>
+<p class="page-sub">Filter buttons</p>
+<div class="panel">
+<h3>New Category</h3>
+<div class="row">
+<div><label>Category Name</label><input type="text" id="ncLabel"></div>
+<button class="btn-sm btn-accent" id="ncAdd" type="button" style="height:42px">+ Add</button>
+</div>
+</div>
+<div class="panel"><h3>All Categories</h3><div id="catList"></div></div>
+</section>
+
+<section class="sec" id="sec-skills">
+<h1>Skills 📊</h1>
+<p class="page-sub">Progress bars</p>
+<div class="panel">
+<h3>New Skill</h3>
+<div class="row">
+<div><label>Skill Name</label><input type="text" id="nsName"></div>
+<div style="max-width:130px"><label>Percentage</label><input type="number" id="nsVal" min="1" max="100" value="80"></div>
+<button class="btn-sm btn-accent" id="nsAdd" type="button" style="height:42px">+ Add</button>
+</div>
+</div>
+<div class="panel"><h3>All Skills</h3><div id="skillListA"></div></div>
+</section>
+
+<section class="sec" id="sec-reviews">
+<h1>Client Reviews 💬</h1>
+<p class="page-sub">Testimonials</p>
+<div class="panel">
+<h3>New Review</h3>
+<div class="row">
+<div><label>Client Name</label><input type="text" id="nrName"></div>
+<div><label>Role / Company</label><input type="text" id="nrRole"></div>
+</div>
+<label>Review Text</label><textarea id="nrText"></textarea>
+<button class="btn-sm btn-accent" id="nrAdd" type="button" style="margin-top:12px">+ Add Review</button>
+</div>
+<div class="panel"><h3>All Reviews</h3><div id="revList"></div></div>
+</section>
+
+<section class="sec" id="sec-stats">
+<h1>Stats 🔢</h1>
+<p class="page-sub">Animated counting numbers</p>
+<div class="panel"><h3>Numbers & Labels</h3><div id="statList"></div></div>
+</section>
+
+<section class="sec" id="sec-about">
+<h1>About & Contact ✍️</h1>
+<p class="page-sub">About text, signature, email, social links</p>
+<div class="panel">
+<h3>About Section</h3>
+<label>About Text</label><textarea id="inAbout" style="min-height:140px"></textarea>
+<div class="row">
+<div><label>Signature</label><input type="text" id="inSign"></div>
+<div><label>Contact Email</label><input type="text" id="inEmail"></div>
+</div>
+</div>
+<div class="panel"><h3>Social Links</h3><div id="socList"></div></div>
+</section>
+
+<section class="sec" id="sec-users">
+<h1>Users 👥</h1>
+<p class="page-sub">All registered accounts</p>
+<div class="panel"><h3>Registered Users</h3><div id="userList"></div></div>
+</section>
+
+<section class="sec" id="sec-messages">
+<h1>Messages 📬</h1>
+<p class="page-sub">Client inquiries from the contact form</p>
+<div class="panel"><h3>Inbox</h3><div id="msgList"></div></div>
+</section>
+
+<section class="sec" id="sec-backup">
+<h1>Backup / Reset 💾</h1>
+<p class="page-sub">Backup your settings</p>
+<div class="panel">
+<h3>Export / Import</h3>
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn-sm btn-accent" id="btnExport" type="button">⬇ Export Backup</button>
+<label for="importFile" class="btn-sm btn-ghost" style="display:inline-flex;align-items:center;cursor:pointer">⬆ Import Backup</label>
+<input type="file" id="importFile" accept=".json">
+</div>
+</div>
+<div class="panel">
+<h3>Danger Zone</h3>
+<button class="btn-sm btn-danger" id="btnReset" type="button">🔄 Reset Portfolio Content</button>
+</div>
+</section>
+
+<section class="sec" id="sec-security">
+<h1>Security 🔐</h1>
+<p class="page-sub">Change your admin username & password</p>
+<div class="cred">Current login → Username: <code id="curUserTxt"></code> &nbsp; Password: <code id="curPassTxt"></code></div>
+<div class="panel" style="max-width:480px">
+<h3>Change Admin Credentials</h3>
+<label>Current Password (required)</label><input type="password" id="secCur" autocomplete="off">
+<label>New Username</label><input type="text" id="secUser" autocomplete="off">
+<label>New Password (blank = keep current)</label><input type="password" id="secPass" autocomplete="off">
+<label>Confirm New Password</label><input type="password" id="secPass2" autocomplete="off">
+<button class="btn-sm btn-accent" id="btnSec" type="button" style="margin-top:16px">Update Credentials</button>
+</div>
+</section>
+
+</main>
+</div>
+</div>
+
+<div id="toast">✓ Saved!</div>
+
+<script src="script.js?v=5"></script>
+</body>
+</html>
